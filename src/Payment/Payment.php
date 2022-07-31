@@ -116,7 +116,7 @@ class Payment
             }
 
             if ($response->status == "Success") {
-                return redirect($response->callBackUrl);
+                return $response->callBackUrl;
             }
         }
     }
